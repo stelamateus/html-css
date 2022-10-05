@@ -1,4 +1,4 @@
 # html-css
  curso  html e css
  
- -Posicionamento de imagem de fundo.
+ -Posicionamento de imagem de fundo página web.
