@@ -17,6 +17,12 @@
             border: 1px solid black;
             padding: 10px;
         }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
         thead, tfoot{
             background-color: gray;
             color: white;
@@ -41,10 +47,13 @@
             tr, td, th
         -->
     <table>
+        <caption> <!-- caption legenda da tabela-->
+            População das Unidades Federetivas
+        </caption>
         <thead>
             <tr>
-                <th>ESTADO</th>
-                <th>POPULAÇÃO</th>
+                <th scope="col">ESTADO</th> <!--scope col os dados estão inseridos na coluna abaixo-->
+                <th scope="col" style="width:50px;">POPULAÇÃO</th>
             </tr>
         </thead>
         <tbody>
@@ -80,11 +89,20 @@
                 <th class="estado">Bahia</th>
                 <td class="num">14 985 284</td>
             </tr>
+            <tr>
+                <th class="estado">Ceará</th>
+                <td class="num">8 452 381</td>
+            </tr>
+            <tr>
+                <th class="estado">Pará</th>
+                <td class="num">7 581 051</td>
+               
+            </tr>
             
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th><!--scope row - dados estão na mesma linha-->
                 <strong>
                     <td class="num">210.147.125</td>
                 </strong>
